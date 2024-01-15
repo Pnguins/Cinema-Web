@@ -1,0 +1,206 @@
+body{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    background-color: rgb(44, 51, 51);
+    color: rgb(203, 228, 222);
+}
+.header{
+    padding: 0 1%;
+    display: flex;
+    align-items: center;
+    max-height: 20vh;
+}
+.header > div{
+    width: calc(100% / 5);
+    display: inline-block;
+    background-color:rgb(44, 51, 51);
+    text-align: center;
+    margin: 0.5%;
+    padding: 20px;
+}
+#h1-logo{
+    width: 30%;
+}
+#h1-search{
+    width: 30%;
+   position:relative;
+}
+#search{
+    background-color:rgb(44, 51, 51) ;
+    color:rgb(203, 228, 222);
+    width: 100%;
+    height: 25px;
+    border: 5px solid rgb(203, 228, 222);
+    border-radius: 5px;
+}
+#search-suggestions {
+    position: absolute;
+    top: 90%;
+    left: 20px;
+    right: 0;
+    z-index: 1;
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: rgb(21, 23, 23);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+} 
+#search-suggestions li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+  
+#search-suggestions li:last-child {
+    border-bottom: none;
+}
+#h1-icon{
+    width: 30%;
+    display: inline-block;
+} 
+#h1-icon > div{
+    display: inline-block;
+    padding: 0 11%;
+
+}
+#search{
+    background-color:rgb(44, 51, 51) ;
+    color:rgb(203, 228, 222);
+    width: 100%;
+    height: 25px;
+    border: 5px solid rgb(203, 228, 222);
+    border-radius: 5px;
+}
+.icon-custom{
+    display: inline-block;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: rgb(203, 228, 222);
+}
+.column{
+    float: left;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.column ul{
+    border: 3px solid rgb(203, 228, 222);
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px 35px;
+    margin: auto;
+}
+.column ul li{
+    text-align: left;
+}
+.column button{
+    border-radius: 5px;
+    width: 30%;
+    height: 5vh;
+    background-color: rgb(228, 147, 147);
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(44, 51, 51);
+    margin: 20px 30px;
+
+}
+.content:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.book-history{
+    border: 3px solid rgb(203, 228, 222);
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px 20px;
+    width: 60%;
+    margin: 20px auto;
+}
+#link-logo:visited{
+    color: rgb(203, 228, 222) !important; 
+}
+#link-logo{
+    text-decoration: none;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content{
+    margin: 3% auto;
+    background-color: rgb(228, 147, 147);
+    color: rgb(44, 51, 51);
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+}
+.modal-header span{
+    float:right
+}
+.input-icon i{
+    width: 20px;
+    height: 10px;
+}
+.input-icon{
+    padding: 0px;
+    margin: 20px auto;
+    width: 50%;
+    border-bottom: 2px solid rgb(44, 51, 51);
+}
+.close:hover,.close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:link{
+    color: rgb(203, 228, 222);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(203, 228, 222);
+    text-decoration: none;
+}
+#logBtn, #regBtn{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(44, 51, 51);
+    color: rgb(228, 147, 147);
+    font-size: medium;
+}
+.form-input{
+    padding: 20px 20px 5px 10px;
+    width: 75%;
+    background-color: rgb(228, 147, 147);
+    border: none;
+}
+.form-input:focus{
+    outline: none;
+}
+.reg-form{
+    display: grid;
+    justify-items: center;
+    background-color: rgb(228, 147, 147);
+    color: rgb(44, 51, 51);
+    border: none;
+    border-bottom: 2px solid rgb(44, 51, 51);
+    margin: 20px auto;
+    width: 40%;
+}
+.reg-form:focus{
+    outline: none;
+}
